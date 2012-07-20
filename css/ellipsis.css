@@ -1,0 +1,23 @@
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-binding: url('ellipsis.xml#ellipsis');
+    /* please note that any characters added after #ellipsis will cause the binding to fail, as a result the element will be hidden on the page */
+}
+
+.css-ellipsis {
+    white-space: normal;
+    word-wrap: break-word;
+    direction: rtl;
+    text-align: left;
+}
+ 
+.css-ellipsis:before {
+    content: "\2026";
+    position: relative;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
